@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "rps2/engine";
+
+package engine;
+
+// The game engine service definition
+service GameEngine {
+    // Sends Move
+    rpc MakeMove (MoveRequest) returns (MoveReply) {}
+}
+
+// The request message containing the move
+message MoveRequest {
+    string move = 1;
+}
+
+// The response message containing the winner
+message MoveReply {
+    string winner = 1; 
+}
+
