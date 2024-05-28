@@ -1,3 +1,4 @@
 grpc-go/*
 yt_tut/*
 k8s_tutorial/*
+nats_tut/*
